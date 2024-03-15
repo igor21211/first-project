@@ -7,22 +7,11 @@
 </template>
 
 <script>
+import toogleMixin from "@/mixins/toogleMixin";
+
 export default {
   name: "MyDialog",
-  data() {
-    return {};
-  },
-  props: {
-    show: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  methods: {
-    closeDialog() {
-      this.$emit("update:show", false);
-    },
-  },
+  mixins: [toogleMixin],
 };
 </script>
 

@@ -8,6 +8,9 @@
       <ButtonComponent @click.stop="deletePost(post.id)"
         >Delete</ButtonComponent
       >
+      <ButtonComponent @click.stop="$router.push(`/users/${post.id}`)"
+        >Open</ButtonComponent
+      >
     </div>
   </div>
 </template>
